@@ -8,5 +8,7 @@ RUN sh build.sh
 RUN mv net_speeder /usr/local/bin/
 
 ADD start.sh /netspeederstart.sh
+RUN chmod +x /netspeederstart.sh
+RUN chmod +x /usr/local/bin/net_speeder
 
 ENTRYPOINT ["/netspeederstart.sh"]
