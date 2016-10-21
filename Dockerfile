@@ -1,6 +1,6 @@
 FROM cbwang/kcp-ssr-docker
 
-RUN apk add libnet-dev libpcap-dev git
+RUNapkupdate    apk add libnet-dev libpcap-dev git
 RUN git clone https://github.com/snooda/net-speeder.git net-speeder
 WORKDIR net-speeder
 RUN sh build.sh
